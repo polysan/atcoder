@@ -8,7 +8,7 @@ public class Main {
           String N = scan.nextLine();
           String[] ketasuchi = N.split("");
           for(String suchi : ketasuchi){
-            total = Integer.parseInt(suchi) + Integer.parseInt(suchi);
+            total = total + Integer.parseInt(suchi);
           }
           System.out.println(Integer.parseInt(N)%total == 0 ? "Yes" : "No");
         }
