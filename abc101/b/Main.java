@@ -3,7 +3,14 @@ import java.util.Scanner;
 public class Main {
     public static void main(String [] args) {
         try(Scanner scan = new Scanner(System.in)){
-          System.out.println();
+          int total = 0;
+        
+          String N = scan.nextLine();
+          String[] ketasuchi = N.split("");
+          for(String suchi : ketasuchi){
+            total = Integer.parseInt(suchi) + Integer.parseInt(suchi);
+          }
+          System.out.println(Integer.parseInt(N)%total == 0 ? "Yes" : "No");
         }
     }
 }
