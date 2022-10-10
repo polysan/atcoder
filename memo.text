@@ -1,7 +1,7 @@
-// 文字列化
+// 文字列にキャスト
 String n = String.valueOf(i);
 
-// 数値化
+// 数値にキャスト
 int num = Integer.parseInt(str);
 
 // 範囲チェック A：下限　B：上限
@@ -16,3 +16,9 @@ Math.max(A, value) == Math.min(value, B)
         }
         return sum;
     }
+
+// 配列ソート 昇順
+Arrays.sort(cards);
+
+// 配列ソート 降順 cardsはInteger
+Arrays.sort(cards, Comparator.reverseOrder());
