@@ -22,3 +22,7 @@ Arrays.sort(cards);
 
 // 配列ソート 降順 cardsはInteger
 Arrays.sort(cards, Comparator.reverseOrder());
+
+// 配列ストリーム toArrayで配列で返せる
+int[] arr = new int[N];
+int[] filArr = Arrays.stream(arr).distinct().toArray();
