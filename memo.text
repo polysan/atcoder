@@ -1,3 +1,5 @@
+1 秒間で処理できる for 文ループの回数は、10^8=100,000,000 回程度
+
 // 文字列にキャスト
 String n = String.valueOf(i);
 
@@ -26,3 +28,11 @@ Arrays.sort(cards, Comparator.reverseOrder());
 // 配列ストリーム toArrayで配列で返せる
 int[] arr = new int[N];
 int[] filArr = Arrays.stream(arr).distinct().toArray();
+
+// 2次元配列の宣言・初期化
+boolean [][] kumiawase;
+boolean [][] kumiawase = new boolean[1][];
+
+// 標準入力値を分割
+line = sc.nextLine();
+marks = line.split("");
