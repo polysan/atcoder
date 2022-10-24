@@ -34,5 +34,5 @@ boolean [][] kumiawase;
 boolean [][] kumiawase = new boolean[1][];
 
 // 標準入力値を分割
-line = sc.nextLine();
+line = sc.next();
 marks = line.split("");
