@@ -9,6 +9,16 @@ int num = Integer.parseInt(str);
 // 範囲チェック A：下限　B：上限
 Math.max(A, value) == Math.min(value, B)
 
+// strが指定の文字列を含むか
+str.contains("xx");
+
+// 大きい方、または小さい方をとる
+Math.max(20, 12)
+Math.min(20, 12)
+
+// list宣言
+List<String> list = new ArrayList<String>();
+
 // 数値の各桁の総和を返す
     static int findSumOfDigits(int n){
         int sum = 0;
