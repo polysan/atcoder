@@ -12,6 +12,11 @@ Math.max(A, value) == Math.min(value, B)
 // strが指定の文字列を含むか
 str.contains("xx");
 
+// 指定の文字列で始まるか、終わるか
+String url = "http://www.examples.com/index.php";
+System.out.println(url.startsWith("http://")); // 結果：true
+System.out.println(url.endsWith(".html")); // 結果：false
+
 // 大きい方、または小さい方をとる
 Math.max(20, 12)
 Math.min(20, 12)
