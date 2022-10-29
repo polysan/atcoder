@@ -1,5 +1,8 @@
 1 秒間で処理できる for 文ループの回数は、10^8=100,000,000 回程度
 
+// longで入力を受け取る
+sc.nextLong();
+
 // 文字列にキャスト
 String n = String.valueOf(i);
 
@@ -20,6 +23,10 @@ System.out.println(url.endsWith(".html")); // 結果：false
 // 大きい方、または小さい方をとる
 Math.max(20, 12)
 Math.min(20, 12)
+
+// 余りの計算
+(A * B) % P
+→ ((A % P) * (B % P)) % P
 
 // list宣言
 List<String> list = new ArrayList<String>();
