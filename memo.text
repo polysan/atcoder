@@ -1,7 +1,7 @@
 1 秒間で処理できる for 文ループの回数は、10^8=100,000,000 回程度
 
 // longで入力を受け取る
-sc.nextLong();
+scan.nextLong();
 
 // 文字列にキャスト
 String n = String.valueOf(i);
