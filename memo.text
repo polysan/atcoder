@@ -56,5 +56,5 @@ boolean [][] kumiawase;
 boolean [][] kumiawase = new boolean[1][];
 
 // 標準入力値を分割
-line = sc.next();
-marks = line.split("");
+String line = scan.next();
+String[] marks = line.split("");
