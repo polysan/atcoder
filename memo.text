@@ -28,8 +28,9 @@ Math.min(20, 12)
 (A * B) % P
 → ((A % P) * (B % P)) % P
 
-// list宣言
-List<String> list = new ArrayList<String>();
+// 標準入力値を分割
+String line = scan.next();
+String[] marks = line.split("");
 
 // 数値の各桁の総和を返す
     static int findSumOfDigits(int n){
@@ -41,20 +42,31 @@ List<String> list = new ArrayList<String>();
         return sum;
     }
 
+
+------List---------
+// list宣言
+List<String> list = new ArrayList<String>();
+
+// listのソート昇順
+ Collections.sort(list);
+
+// listのソート降順
+ Collections.sort(list, Collections.reverseOrder());
+--------------------
+
+
+--------配列------------
 // 配列ソート 昇順
 Arrays.sort(cards);
 
 // 配列ソート 降順 cardsはInteger
 Arrays.sort(cards, Comparator.reverseOrder());
 
-// 配列ストリーム toArrayで配列で返せる
+// 配列をストリーム処理後、toArrayで配列で返せる
 int[] arr = new int[N];
 int[] filArr = Arrays.stream(arr).distinct().toArray();
 
 // 2次元配列の宣言・初期化
 boolean [][] kumiawase;
 boolean [][] kumiawase = new boolean[1][];
-
-// 標準入力値を分割
-String line = scan.next();
-String[] marks = line.split("");
+------------------------
