@@ -6,40 +6,21 @@ public class Main {
         try(Scanner scan = new Scanner(System.in)){
           int H = Integer.parseInt(scan.next());
           int M = Integer.parseInt(scan.next());
-          int a=0;
-          int b=0;
-          int c=0;
-          int d=0;
-          if(String.valueOf(H).length() == 1){
-            a = 0;
-            b = H;
-          }
-          if(String.valueOf(H).length() == 2){
+          int a,b,c,d;
             a = (H/10)%10;
             b = H%10;
-          }
-          if(String.valueOf(M).length() == 1){
-            c = 0;
-            d = M;
-          }
-          if(String.valueOf(M).length() == 2){
             c = (M/10)%10;
             d = M%10;
-          }
-          String AB = String.valueOf(a)+String.valueOf(b);
-          String CD = String.valueOf(c)+String.valueOf(d);
-          int ab=Integer.parseInt(AB);
-          int cd=Integer.parseInt(CD);
+          int ab = Integer.parseInt(String.valueOf(a)+String.valueOf(b));
+          int cd = Integer.parseInt(String.valueOf(c)+String.valueOf(d));
           while(true){
             int tempA = (ab/10)%10;
             int tempB = ab%10;
             int tempC = (cd/10)%10;
             int tempD = cd%10;
-            String tempAB = String.valueOf(tempA)+String.valueOf(tempC);
-            String tempCD = String.valueOf(tempB)+String.valueOf(tempD);
-            int tempab = Integer.parseInt(tempAB);
-            int tempcd = Integer.parseInt(tempCD);
-            if(tempab >= 0 && tempab <= 23 && tempcd >= 0 && tempcd <= 59){
+            int tempAB = Integer.parseInt(String.valueOf(tempA)+String.valueOf(tempC));
+            int tempCD = Integer.parseInt(String.valueOf(tempB)+String.valueOf(tempD));
+            if(tempAB >= 0 && tempAB <= 23 && tempCD >= 0 && tempCD <= 59){
               System.out.println(ab  + " " + cd);
               return;
             }
@@ -47,6 +28,10 @@ public class Main {
             if(cd==60){
               cd=0;
               ab+=1;
+            }
+            if(ab==24){
+              cd=0;
+              ab=0;
             }
           }       
         }
