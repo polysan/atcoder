@@ -1,5 +1,8 @@
 1 秒間で処理できる for 文ループの回数は、10^8=100,000,000 回程度
 
+P を並び替えて Q と等しくできるかどうかという問題を解く最も簡単な方法は、
+ P と Q を双方ソートしてその結果が同じになるかを調べる ( 同じになれば可能、そうでなければ不可能 ) というものです。
+
 // longで入力を受け取る
 scan.nextLong();
 
@@ -70,3 +73,13 @@ int[] filArr = Arrays.stream(arr).distinct().toArray();
 boolean [][] kumiawase;
 boolean [][] kumiawase = new boolean[1][];
 ------------------------
+
+-------正規表現---------
+import java.util.regex.Pattern;
+import java.util.regex.Matcher;
+
+String S = "xxxx"
+Pattern ptn = Pattern.compile("^[A-Z].*$");
+Matcher matcher = ptn.matcher(S);
+// findメソッドでマッチ結果がbooleanで返却される
+matcher.find();
