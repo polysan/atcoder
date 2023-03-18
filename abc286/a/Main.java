@@ -1,4 +1,4 @@
-
+package atcoder.abc286.a;
 import java.util.Scanner;
 
 public class Main {

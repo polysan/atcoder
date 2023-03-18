@@ -1,3 +1,5 @@
+package atcoder.abc101.c;
+
 import java.util.Scanner;
 
 public class Main {
