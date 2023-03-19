@@ -3,6 +3,17 @@
 P を並び替えて Q と等しくできるかどうかという問題を解く最も簡単な方法は、
  P と Q を双方ソートしてその結果が同じになるかを調べる ( 同じになれば可能、そうでなければ不可能 ) というものです。
 
+空白区切りは末尾に空白が入っていてもエラーとならない
+
+---クラスフィールドで処理を実行する方法---
+    static {
+        for (int player = 1; player <= PLAYER_COUNT; player++) {
+            TOTAL_INDEX += player;
+        }
+    }
+----------------------------------
+
+
 // longで入力を受け取る
 scan.nextLong();
 
@@ -50,6 +61,12 @@ String[] marks = line.split("");
 // list宣言
 List<String> list = new ArrayList<String>();
 
+// 値を追加
+list.add("あ");
+
+// 値を取得
+list.get(2);
+
 // listのソート昇順
  Collections.sort(list);
 
@@ -57,8 +74,18 @@ List<String> list = new ArrayList<String>();
  Collections.sort(list, Collections.reverseOrder());
 --------------------
 
+------map-----------
+// map宣言
+Map<Integer, String> map = new HashMap<>();
 
---------配列------------
+// 値を追加
+map.put(1, "リンゴ");
+
+// 値を取得
+map.get(1);
+--------------------
+
+------配列----------
 // 配列ソート 昇順
 Arrays.sort(cards);
 
@@ -72,7 +99,7 @@ int[] filArr = Arrays.stream(arr).distinct().toArray();
 // 2次元配列の宣言・初期化
 boolean [][] kumiawase;
 boolean [][] kumiawase = new boolean[1][];
-------------------------
+--------------------
 
 -------正規表現---------
 import java.util.regex.Pattern;
