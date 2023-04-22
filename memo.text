@@ -75,8 +75,14 @@ list.get(2);
 --------------------
 
 ------map-----------
-// map宣言
+// HashMap宣言
 Map<Integer, String> map = new HashMap<>();
+
+// TreeMap宣言 キーで自動でソート
+Map<Integer, String> mMap = new TreeMap<Integer, String>();
+
+// LinkedHashMap宣言 Mapに入力した順序が保証される
+Map<String, String> map = new LinkedHashMap<>();
 
 // 値を追加
 map.put(1, "リンゴ");
