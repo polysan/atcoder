@@ -9,7 +9,7 @@ public class Main {
           long N = scan.nextLong();
           final int mod = 998244353;
 
-          for(int x = 0; x < 998244353; x++){
+          for(int x = 0; x < mod; x++){
             if((N-x)%998244353 == 0){
               System.out.println(x);
               return;

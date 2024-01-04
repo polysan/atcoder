@@ -6,7 +6,6 @@ import java.util.Scanner;
 public class Main {
   public static void main(String[] args) {
     try (Scanner scan = new Scanner(System.in)) {
-      int N = Integer.parseInt(scan.next());
       String S = scan.next();
       if (!S.contains("o") || !S.contains("-")) {
         System.out.println(-1);

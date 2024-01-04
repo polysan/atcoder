@@ -5,7 +5,6 @@ public class Main {
     public static void main(String [] args) {
         try(Scanner scan = new Scanner(System.in)){
           int H = Integer.parseInt(scan.next());
-          int W = Integer.parseInt(scan.next());
           int count = 0;
           for(int i = 0; i < H; i++){
             String line = scan.next();

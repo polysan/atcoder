@@ -9,7 +9,6 @@ public class Main {
     public static void main(String [] args) {
         try(Scanner scan = new Scanner(System.in)){
          
-          int N = Integer.parseInt(scan.next());
           int Q = Integer.parseInt(scan.next());
           Set<String> set = new HashSet<String>();
           int T,A,B;
