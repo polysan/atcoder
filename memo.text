@@ -13,6 +13,9 @@ P を並び替えて Q と等しくできるかどうかという問題を解く
     }
 ----------------------------------
 
+int N = Integer.parseInt(scan.next());
+
+String line = scan.next();
 
 // longで入力を受け取る
 scan.nextLong();

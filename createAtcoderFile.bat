@@ -24,7 +24,7 @@ echo      public static void main(String [] args) {>> %CURRENT_DIRECTORY1%\abc%1
 echo          try(Scanner scan = new Scanner(System.in)){>> %CURRENT_DIRECTORY1%\abc%1\b\Main.java
 echo              System.out.println();>> %CURRENT_DIRECTORY1%\abc%1\b\Main.java
 echo          }>> %CURRENT_DIRECTORY1%\abc%1\b\Main.java
-echo      >> %CURRENT_DIRECTORY1%\abc%1\b\Main.java
+echo      }>> %CURRENT_DIRECTORY1%\abc%1\b\Main.java
 echo  }>> %CURRENT_DIRECTORY1%\abc%1\b\Main.java
 
 echo  package atcoder.abc%1.c;> %CURRENT_DIRECTORY1%\abc%1\c\Main.java
